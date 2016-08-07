@@ -72,7 +72,7 @@ gulp.task('inject_all', function() {
         config.publicPath+'/**/**/**'
     ], {read: false});
 
-    return gulp.src('./index.html')
+    return gulp.src('.index.html')
         .pipe(inject(resources, {
             ignorePath: '/public'
         }))
@@ -116,6 +116,7 @@ gulp.task('copy_assets', function(){
     ])
     .pipe(gulp.dest(config.publicPath+'/assets'));
 });
+
 //Envia as páginas para a pasta public/pages
 gulp.task('copy_js', function(){
     return gulp.src([

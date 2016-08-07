@@ -1,0 +1,9 @@
+{
+  "name": "mimos-de-alice",
+  "version": "1.0.0",
+  "dependencies": {
+    "materialize": ">=0.97.3",
+    "font-awesome": ">=4.6.3"
+  },
+  "private": true
+}
