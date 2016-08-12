@@ -1,6 +1,35 @@
 @import url(http://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
 $font-family-base: 'Raleway', sans-serif;
-// Import bootstrap and fontawesome
+// Import materialize and fontawesome
 @import "materialize";
 @import "font-awesome";
+@import "vectors";
+@import "candies";
+@import "nav";
+
+section.section{
+  min-height: 100vh;
+  padding-top: 64px;
+  background-image: url(../assets/images/body-bg.png);
+  background-attachment: fixed;
+}
+
+
+#inicio{
+  height: 90vh;
+
+  .container{
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:10vh;
+    z-index: 0;
+  }
+}
+
+main{
+  position: relative;
+  z-index: 2;
+}

@@ -72,7 +72,7 @@ gulp.task('inject_all', function() {
         config.publicPath+'/**/**/**'
     ], {read: false});
 
-    return gulp.src('.index.html')
+    return gulp.src(config.publicPath+'/index.html')
         .pipe(inject(resources, {
             ignorePath: '/public'
         }))
@@ -131,7 +131,17 @@ gulp.task('default', function() {
 
 // Usamos o `gulp.run` para rodar as tarefas
 // E usamos o `gulp.watch` para o Gulp esperar mudanças nos arquivos para rodar novamente
-    gulp.run('lint', 'dist', 'icons', 'fonts', 'css', 'copy_js', 'copy_index', 'copy_pages', 'copy_assets', 'minify_html');
+    var tasks = ['lint', 'dist', 'icons', 'fonts', 'css', 'copy_js', 'copy_index', 'copy_pages', 'copy_assets', 'minify_html'];
+    gulp.run(tasks);
+    var watchFiles = [
+        config.indexPath+'/index.html',
+        config.indexPath+'/assets/**/*',
+        config.indexPath+'/resources/**/*',
+        config.indexPath+'/pages/*'
+    ]
+    gulp.watch(watchFiles, function (evt) {
+        gulp.run(tasks);
+    })
 });
 
 //Minifica os arquivos HTML
