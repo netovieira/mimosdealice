@@ -1,0 +1,40 @@
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'Bauhaus 93';
+        src: url('../fonts/BAUHS93.TTF');
+      }
+
+      .cls-1 {
+      fill: #91145c;
+      }
+
+      .cls-2 {
+      fill: #bf2f76;
+      }
+
+      .cls-3 {
+      font-size: 98.29px;
+      }
+
+      .cls-3, .cls-4 {
+      fill: #fff;
+      font-family: 'Bauhaus 93';
+      }
+
+      .cls-4 {
+      font-size: 75.36px;
+      }
+    </style>
+  </defs>
+  <title>logo_textos</title>
+  <g>
+    <g>
+      <path class="cls-1" d="M530.23,471c-12.59-17.31-29.23,4.5-29.23,4.5s-16.64-21.81-29.23-4.5C461,485.81,495.15,509,501,516.38,506.85,509,541,485.81,530.23,471Z"/>
+      <path class="cls-2" d="M530.23,468c-12.59-17.31-29.23,4.5-29.23,4.5s-16.64-21.81-29.23-4.5C461,482.81,495.15,506,501,513.38,506.85,506,541,482.81,530.23,468Z"/>
+    </g>
+    <text class="cls-3" transform="translate(378.5 603.35)">ALICE</text>
+    <text class="cls-4" transform="translate(343.77 434.89)">mimos de</text>
+  </g>
+</svg>
