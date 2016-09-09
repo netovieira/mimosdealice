@@ -1,0 +1,30 @@
+{
+  "name": "mimos-de-alice",
+  "version": "1.0.0",
+  "description": "Webpage da Doceria Mimos de Alice",
+  "main": "GulpFile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "^0.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "jshint": "^2.9.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-inject": "^4.1.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-selectors": "^0.1.9",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthero Vieira Neto",
+  "license": "ISC"
+}
